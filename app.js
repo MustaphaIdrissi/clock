@@ -1,33 +1,23 @@
-const hourt=document.getElementById("hour");
-let menute=document.getElementById("menite");
-const seconde=document.getElementById("seconde");
+const seconde=document.getElementById("second");
+const minute=document.getElementById("minute");
+const hour=document.getElementById("hour");
 
-
-
-
-
-function datr(){
+function dattime(){
     const dr=new Date();
-
     const sec=dr.getSeconds();
-    const menut=dr.getMinutes();
+    const min=dr.getMinutes();
     const hr=dr.getHours();
+    let sect=(sec*6)-45;
+    let mint=(min*6+sec/10)-45;
+    let hrt=(hr*30+min/2)-45;
 
-    // const sec=45;
-    // const menut=0;
-    // const hr=0;
-	console.log(hr*30+menut/2);
+    hour.style.transform='rotate('+hrt+'deg)';
+    minute.style.transform='rotate('+mint+'deg)';
+    seconde.style.transform='rotate('+sect+'deg)';
 
-    const sect=(sec*6)-45;
-    const menutt=(menut*6+sec/10)-45;
-    const hrt=(hr * 30 +menut / 2)-45;
-
-
-
-seconde.style.transform='rotate('+sect+'deg)';
-menute.style.transform='rotate('+menutt+'deg)';
-hourt.style.transform='rotate('+hrt+'deg)';
 }
-setInterval(datr,100);
+setInterval(dattime,100);
+
+
 
 
