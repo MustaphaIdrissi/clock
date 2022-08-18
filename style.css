@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+	background-color:rgb(0, 0, 0,0.7);
+}
+.envolpe{
+
+    width: 300px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    border: 4px solid rgb(255, 0, 255,1);
+ 
+    box-shadow: 0px 0px 58px 11px rgb(255 0 255 / 70%), 0px 0px 39px 4px #fff inset;
+    transform: rotate(45deg);
+   /* border-radius: 50%; */
+}
+.envolpe::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 44;
+
+}
+
+.hour-clock{
+    width: 6px;
+    height: 100px;
+    position: absolute;
+    left:148px;
+    bottom: 148px;
+    transform-origin: bottom;
+   
+    background-color: rgb(238, 13, 13);
+
+}
+.menite-clock{
+    width: 6px;
+    height: 120px;
+    position: absolute;
+    left:148px;
+    bottom: 148px;
+    transform-origin: bottom;
+   
+    background-color: rgb(60, 190, 34); 
+
+}
+
+.seconde-clock{
+    position: absolute;
+    left:148px;
+    bottom: 148px;
+    transform-origin: bottom;
+    width:6px;
+    height:140px;
+ 
+    background-color: rgb(79, 17, 223); 
+   
+}
+
+
+
+
+
+
+
+span{
+    font-size: 30px;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    position: absolute;
+    color: rgb(255, 0, 255);
+}
+.sp1{left: 12px;
+    top: 12px;}
+.sp2{
+    left: 112px;
+    top: 12px;
+}
+.sp3{
+    left: 180px;
+    top: 12px;
+}
+.sp4{
+    left: 271px;
+    top: 12px;
+}
+.sp5{
+    top: 103px;
+    right: 12px;
+}
+.sp6{
+    top: 175px;
+    right: 12px;
+}
+.sp7{
+    left: 270px;
+    bottom: 12px;
+}
+.sp8{
+    right: 110px;
+    bottom: 12px;
+}
+.sp9{
+
+    right: 175px;
+    bottom: 12px;
+}
+.sp10{
+    right:271px;
+    bottom: 12px;
+}
+.sp11{
+    bottom: 103px;
+    left: 12px;
+}
+.sp12{
+    bottom: 170px;
+    left: 12px;
+}
